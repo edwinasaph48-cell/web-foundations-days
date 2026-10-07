@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuickNotes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>QuickNotes</h1>
+        <p>Capture your thoughts quickly and keep them organized.</p>
+    </header>
+
+
+    <main>
+
+        <!-- Add Note Section -->
+        <section class="add-note-section">
+
+            <h2>Add a note</h2>
+
+            <textarea
+                id="note-input"
+                placeholder="Write your note here..."
+                rows="4"
+            ></textarea>
+
+
+            <div class="form-controls">
+
+                <label for="category-select">
+                    Category
+                </label>
+
+                <select id="category-select">
+
+                    <option value="personal">
+                        Personal
+                    </option>
+
+                    <option value="work">
+                        Work
+                    </option>
+
+                    <option value="study">
+                        Study
+                    </option>
+
+                </select>
+
+
+                <button id="add-note-btn">
+                    Add Note
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Notes Section -->
+        <section class="notes-section">
+
+            <h2>Your notes</h2>
+
+
+            <!-- Search -->
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search notes..."
+            >
+
+
+            <!-- Filter -->
+            <select id="filter-select">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+                <option value="personal">
+                    Personal
+                </option>
+
+                <option value="work">
+                    Work
+                </option>
+
+                <option value="study">
+                    Study
+                </option>
+
+            </select>
+
+
+            <!-- Notes will appear here -->
+            <div id="notes-container"></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 QuickNotes</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
